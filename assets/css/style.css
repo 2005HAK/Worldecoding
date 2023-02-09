@@ -1,0 +1,215 @@
+:root {
+    --cor-cabecalho-rodape: #000000;
+    --cor-fontes: #fafafa;
+    --fontes-contraste: #b3ff00;
+    --fundo-contraste: #bbbbbb;
+    --padding: 20px;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+/*scrollbar*/
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--cor-cabecalho-rodape);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--fontes-contraste);
+    border-radius: 5px;
+    border: 2px solid var(--cor-cabecalho-rodape);
+}
+/*fim scrollbar*/
+
+/*cabecalho*/
+header {
+    background-color: var(--cor-cabecalho-rodape);
+    color: var(--cor-fontes);
+    display: flex;
+    flex-direction: row;
+    height: 6em;
+}
+
+header figure {
+    width: 10%;
+    margin: .5em;
+}
+
+header img {
+    width: 5em;
+    margin-left: 2em;
+}
+
+.titulo {
+    font-size: 20pt;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alinhar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: center;
+    width: 40%;
+}
+
+.opcoes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: .5em;
+}
+
+.opcoes p {
+    margin: 0;
+    padding: .5em
+}
+
+.opcoes a {
+    padding: .5em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.opcoes a:hover {
+    background-color: rgb(58, 58, 58);
+    color: var(--fontes-contraste);
+    border-bottom: 1px solid var(--fontes-contraste);
+}
+
+.opcoes p:hover {
+    background-color: aliceblue;
+    color: #000000;
+}
+/*fim cabecalho*/
+
+/*conteudo*/
+.classe {
+    display: flex;
+    font-size: 25px;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+}
+
+.subclasses {
+    display: flex;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: 300px;
+    opacity: .8;
+    filter: grayscale(.3);
+    color: #000000;
+    height: 400px;
+    width: 300px;
+    margin: 15px;
+}
+
+.card:hover {
+    filter: contrast(1.75);
+    filter: grayscale(0);
+    opacity: 1;
+}
+
+.card:hover .content-card h3{
+    color: #000000;
+}
+
+.card:hover .triangle {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 1;
+}
+
+.card:nth-child(1) {
+    background-image: url("/assets/img/img-computador.jpg"); 
+}
+
+.card:nth-child(2) {
+    background-image: url("/assets/img/img-celular.jpg");
+}
+
+.card:nth-child(3) {
+    background-image: url("/assets/img/img-programacao.jpg");
+}
+
+.content-card h3{
+    color: #bbbbbb;
+    bottom: 2px;
+    position: absolute;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.triangle {
+    position: absolute;
+    width: 300px;
+    right: -20px;
+    bottom: -30px;
+    border-left: 300px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 100px solid var(--fontes-contraste);
+    background-color: transparent;
+    opacity: 0;
+}
+
+.inverted {
+    left: -30px;
+    border-left: 0px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 100px solid #89c400;
+}
+/*fim conteudo*/
+
+/*Rodapé*/
+
+footer {
+    background-color: var(--cor-cabecalho-rodape);
+    color: var(--cor-fontes);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: var(--padding);
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    color: var(--cor-fontes);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    padding: 5px;
+}
+
+.icones img{
+    padding: 10px;
+    width: 20px;
+}
