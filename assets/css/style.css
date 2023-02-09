@@ -181,6 +181,30 @@ header img {
 }
 /*fim conteudo*/
 
+/*aticle*/
+
+.conteudos-paginas {
+    display: flex;
+}
+
+.conteudo-article {
+    margin: 20px 10px 10px 150px;
+    width: 60vw;
+}
+
+.conteudo-article h2 {
+    margin-bottom: 30px;
+}
+
+.conteudo-article p {
+    text-align: justify;
+}
+
+.nav-conteudo {
+    margin: 20px;
+}
+/*fim article*/
+
 /*Rodapé*/
 
 footer {
@@ -205,7 +229,6 @@ footer {
     text-decoration: none;
     display: flex;
     align-items: center;
-
     padding: 5px;
 }
 
