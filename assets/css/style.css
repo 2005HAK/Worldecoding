@@ -3,7 +3,7 @@
     --fontes-escuras: #000000;
     --cor-fontes: #fafafa;
     --fontes-contraste: #a2e700;
-    --fundo-contraste: #bbbbbb;
+    --fundo-contraste: #cccccc;
     --padding: 20px;
     --largura-card: 250px;
     
@@ -208,6 +208,8 @@ header img {
 
 .conteudo-article p {
     text-align: justify;
+    text-indent: 3em;
+    line-height: 25px;
 }
 
 .nav-conteudo {
