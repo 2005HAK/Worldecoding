@@ -270,6 +270,10 @@ footer {
     padding: 5px;
 }
 
+.social figure {
+    width: 40px;
+}
+
 .social img{
     padding: 10px;
     width: 40px;
