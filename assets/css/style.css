@@ -37,7 +37,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/*cabecalho*/
+/*cabeçalho*/
 header {
     background-color: var(--cor-cabecalho-rodape);
     color: var(--cor-fontes);
@@ -100,9 +100,9 @@ header img {
     background-color: aliceblue;
     color: #000000;
 }
-/*fim cabecalho*/
+/*fim cabeçalho*/
 
-/*conteudo*/
+/*conteúdo*/
 .classe {
     display: flex;
     font-size: 25px;
