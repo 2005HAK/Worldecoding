@@ -1,12 +1,12 @@
 :root {
     --cor-cabecalho-rodape: #000000;
     --fontes-escuras: #000000;
-    --cor-fontes: #fafafa;
+    --cor-fontes: #ffffff;
     --fontes-contraste: #a2e700;
-    --fundo-contraste: #fafafa;
+    --fundo-contraste: #f7f7f7;
+    --fundo-contraste-escuro: #eeeeee;
     --padding: 20px;
     --largura-card: 250px;
-    
 }
 
 * {
@@ -196,14 +196,26 @@ header img {
     min-height: 80vh;
 }
 
+.sumario {
+    margin: 30px;
+}
+
+.sumario h3 {
+    margin-bottom: 20px;
+}
+
+.sumario li {
+    margin: 10px;
+}
+
 .conteudo-article {
     padding: 20px 100px 10px 150px;
-    border-right: .5px solid #c7c7c7;
+    border-right: .5px groove #d3d3d3;
     width: 75vw;
 }
 
 .conteudo-article h2 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .conteudo-article p {
@@ -214,6 +226,7 @@ header img {
 
 .nav-conteudo {
     width: 25vw;
+    background-color: var(--fundo-contraste-escuro);
 }
 
 .nav-conteudo b {
@@ -255,7 +268,8 @@ header img {
 }
 
 .data, .escrito-por {
-    margin-bottom: 5px;
+    font-size: 12px;
+    margin-bottom: 30px;
 }
 /*fim article*/
 
