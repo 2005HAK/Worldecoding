@@ -3,7 +3,7 @@
     --fontes-escuras: #000000;
     --cor-fontes: #fafafa;
     --fontes-contraste: #a2e700;
-    --fundo-contraste: #cccccc;
+    --fundo-contraste: #fafafa;
     --padding: 20px;
     --largura-card: 250px;
     
@@ -34,7 +34,7 @@ body::-webkit-scrollbar-thumb {
 /*fim scrollbar*/
 
 body {
-    background-color: #f0f0f0;
+    background-color: var(--fundo-contraste);
 }
 
 /*cabeçalho*/
@@ -234,11 +234,27 @@ header img {
     border-bottom: 1px solid var(--fontes-contraste);
 }
 
-.divisor {
+.resolucoes li {
+    margin: 20px 20px 20px 36px;
+    font-size: 20px;
+}
+
+.conteudo-article figure {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+.conteudo-article img {
+    border: 2px solid var(--fontes-escuras);
+    width: 500px;
+}
+
+.divisor, .conteudo-article h4 {
     margin: 40px 0 20px 0;
 }
 
-.data {
+.data, .escrito-por {
     margin-bottom: 5px;
 }
 /*fim article*/
