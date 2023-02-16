@@ -43,16 +43,18 @@ header {
     color: var(--cor-fontes);
     display: flex;
     flex-direction: row;
-    height: 6em;
+    height: 4em;
+    top: 0;
+    position: sticky;
 }
 
 header figure {
-    width: 10%;
+    width: 8%;
     margin: .5em;
 }
 
 header img {
-    width: 5em;
+    width: 3em;
     margin-left: 2em;
 }
 
@@ -258,18 +260,25 @@ header img {
     justify-content: center;
 }
 
+.alerta {
+    color: #ff0000;
+    font-size: 20px;
+    padding: 5px;
+    border: 3px solid #ff0000;
+}
+
 .conteudo-article img {
     border: 2px solid var(--fontes-escuras);
     width: 500px;
 }
 
 .divisor, .conteudo-article h4 {
-    margin: 40px 0 20px 0;
+    margin: 30px 0 20px 0;
 }
 
 .data, .escrito-por {
     font-size: 12px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 /*fim article*/
 
