@@ -1,0 +1,56 @@
+@media screen and (max-width:390px){
+    header figure {
+        width: 15%;
+    }
+    
+    header img {
+        width: 45px;
+        margin-left: 0;
+    }
+
+    .titulo {
+        font-size: 20px;
+    }
+/*
+    .alinhar {
+        display: none;
+    }*/
+
+    .conteudos-paginas {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-article {
+        padding: 10px;
+        width: 100vw;
+    }
+
+    .nav-conteudo {
+        width: 100vw;
+        padding: 10px;
+    }
+
+    .nav-conteudo a:hover {
+        border: none;
+        color: var(--fontes-contraste);
+    }
+
+    .conteudo-article img {
+        width: 90vw;
+    }
+
+    .subclasses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   
+    }
+
+    .triangle, .inverted {
+        display: none;
+    }
+
+    .card:hover .content-card h3 {
+        color: var(--fontes-contraste);
+    }
+}
