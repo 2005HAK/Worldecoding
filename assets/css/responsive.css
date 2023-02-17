@@ -1,4 +1,4 @@
-@media screen and (max-width:390px){
+@media screen and (max-width:430px){
     header figure {
         width: 15%;
     }
@@ -51,6 +51,25 @@
     }
 
     .card:hover .content-card h3 {
+        color: var(--fontes-contraste);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    header figure {
+        width: 15%;
+    }
+
+    .conteudo-article {
+        padding: 20px;
+    }
+
+    .nav-conteudo b{
+        margin: 5px;
+    }
+
+    .nav-conteudo a:hover {
+        border: none;
         color: var(--fontes-contraste);
     }
 }
