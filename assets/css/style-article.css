@@ -14,7 +14,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: all .3s ease-in-out;
 }
 
 /*scrollbar*/
@@ -102,7 +101,7 @@ header img {
 /*menu responsivo*/
 .responsive-menu {
     width: 40%;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: end;
 }
@@ -129,29 +128,95 @@ label span {
     background: var(--fundo-contraste);
 }
 
-span:nth-child(1) {
+#toggle {
+    display: none;
+}
+
+.checkbox .trace {
+    transition: 0.5s ease-in-out;
+}
+
+.trace:nth-child(1) {
     top: 1px;
 }
 
-span:nth-child(2) {
+.trace:nth-child(2) {
     top: 7px;
 }
 
-span:nth-child(3) {
+.trace:nth-child(3) {
     top: 13px;
 }
 
-.screen-menu {
-    display: none;
-    background-color: #89c400;
+.menu {
+    position: absolute;
+    top: 12px;
+    right: 13px;
+    background-color: var(--cor-cabecalho-rodape);
+    height: 100vh;
+    width: 100vw;
+    visibility: hidden;
+    z-index: 0;
+    transition: 400ms ease-in-out 0s;
 }
 
-#menu:checked .screen-menu{
-    display: flex;
-    z-index: 1;
+.menu-itens {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 400ms ease-in-out 0.01s;
+}
 
+.menu-itens a {
+    text-align: center;
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--cor-fontes);
+}
+
+.menu-itens a:hover {
+    background-color: var(--cor-fontes);
+    color: var(--cor-cabecalho-rodape);
+}
+
+/*animação menu*/
+#toggle:checked + .checkbox .trace:nth-child(1) {
+    transform: rotate(45deg);
+    background-color: var(--fontes-contraste);
+    top: 15px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+    transform: translateX(-10px);
+    visibility: hidden;
+    opacity: 0;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(3) {
+    transform: rotate(-45deg);
+    background-color: var(--fontes-contraste);
+    top: 8px;
+}
+
+#toggle:checked + .checkbox {
+    background-color: #bbbbbb;
+    z-index: 1;
+}
+
+#toggle:checked + .menu {
+    top: 0;
+    right: 0;
+    visibility: visible;
+    z-index: -2;
 }
 /*fim do menu responsivo*/
 /*fim cabeçalho*/
@@ -181,6 +246,7 @@ span:nth-child(3) {
     height: 350px;
     width: var(--largura-card);
     margin: 15px;
+    transition: all .3s ease-in-out;
 }
 
 .card:hover {
