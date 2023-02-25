@@ -257,6 +257,7 @@ label span {
 
 .card:hover .content-card h3{
     color: #000000;
+    z-index: 1;
 }
 
 .card:hover .triangle {
@@ -298,6 +299,7 @@ label span {
     border-right: 0px solid transparent;
     border-bottom: 100px solid var(--fontes-contraste);
     background-color: transparent;
+    transition: all .3s ease-in-out;
     opacity: 0;
 }
 
