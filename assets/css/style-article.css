@@ -10,7 +10,7 @@
 }
 
 * {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -406,6 +406,32 @@ label span {
 .data, .escrito-por {
     font-size: 12px;
     margin-bottom: 20px;
+}
+
+.back{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, rgb(11, 29, 1), rgb(6, 53, 4), rgb(16, 85, 13),rgb(31, 116, 28) ,rgb(50, 136, 47), rgb(69, 158, 66), rgb(94, 185, 90),rgb(134, 224, 131));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    height: 70vh;
+    width: 40vw;
+    background-color: #3cff0091;
+    box-shadow: 15px 15px 30px black;
+    border-radius: 8px;
+    padding: 30px 60px;
+}
+
+.form input{
+    width: 100%;
+}
+
+.msg{
+    height: 150px;
 }
 /*fim article*/
 
